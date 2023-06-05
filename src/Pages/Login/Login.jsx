@@ -10,8 +10,8 @@ const Login = () => {
     const { loading, setLoading, signIn, signInWithGoogle, resetPassword } =
         useContext(AuthContext)
     const navigate = useNavigate()
-    const location = useLocation()
-    const from = location.state?.from?.pathname || '/'
+   const location = useLocation()
+   const from = location.state?.from?.pathname || '/'
     const emailRef = useRef()
     // Handle submit
     const handleSubmit = event => {
